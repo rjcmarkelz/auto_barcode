@@ -40,7 +40,7 @@ def main():
     total_count = total_matched + total_unmatched
     summarize_observed_barcodes(barcode_table, barcodes_obs, total_count, directory, fq_name, barcode_name)
     summarize_counts(barcode_table, args.fastq, total_count, total_matched, total_unmatched, directory, fq_name, barcode_name)
-    plot_summary(barcodes_obs, barcode_table, directory, args.id)
+    # plot_summary(barcodes_obs, barcode_table, directory, args.id)
 
 def get_options():
     description = "Extracts fastq reads for specified barcode(s) from one or multiple FASTQ files."
